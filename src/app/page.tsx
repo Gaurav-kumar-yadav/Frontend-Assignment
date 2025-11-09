@@ -3,7 +3,8 @@ import React from "react";
 import Link from "next/link"; // ✅ Import Link for navigation
 import Signup from "../components/Signup";
 
-export default function Page(): JSX.Element {
+export default function Page() {
+
   return (
     <div className="fixed top-0 left-0 w-screen h-screen overflow-hidden [background-image:linear-gradient(118.88deg,hsla(0,0%,0%,1)_0%,rgba(139,61,255,0.5)_100%)] bg-cover bg-center">
       

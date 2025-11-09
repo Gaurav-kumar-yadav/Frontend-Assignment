@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 
-export default function Signup(): JSX.Element {
+export default function Signup() {
+
   return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="flex flex-col justify-center items-center">
