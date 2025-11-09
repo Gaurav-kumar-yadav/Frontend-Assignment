@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Forescribe – Signup Page (Next.js + TypeScript)
 
-## Getting Started
+A responsive, modern signup page built using **Next.js 14**, **TypeScript**, and **Tailwind CSS**.  
+The project features a clean gradient background, a blurred glassmorphism signup card,  
+interactive buttons with animations, and a responsive navbar with routing.
 
-First, run the development server:
+---
+
+## 🚀 Live Demo
+🔗 **[View Live on Vercel](https://frontend-assig-git-381479-gaurav-kumar-yadavs-projects-1db4caf8.vercel.app/)**
+
+---
+
+## 🧩 Features
+
+✅ Responsive full-screen gradient background  
+✅ Glassmorphism login card with Google and Microsoft signup buttons  
+✅ Smooth hover animations and transitions  
+✅ Navbar with working routes (`Home`, `About`, `Services`, `Contact`)  
+✅ Built using **Next.js App Router** with **TypeScript**  
+✅ Fully deployed and optimized with **Vercel**
+
+---
+
+## 🏗️ Directory Structure
+
+                                    Frontend Assignment/
+                                    │
+                                    ├── .next/                        # (auto-generated build folder)
+                                    ├── node_modules/                 # installed npm dependencies
+                                    │
+                                    ├── public/                       # public static assets
+                                    │   └── assets/
+                                    │       ├── Asset2.png
+                                    │       ├── Group39705.png
+                                    │       ├── google-icon.png
+                                    │       ├── Group.svg
+                                    │       ├── 60pxF_8b3dff_v2.png
+                                    │
+                                    ├── src/
+                                    │   ├── app/
+                                    │   │   ├── layout.tsx            # Global layout (HTML structure)
+                                    │   │   ├── page.tsx              # Home page (main)
+                                    │   │   │
+                                    │   │   ├── about/                # /about route
+                                    │   │   │   └── page.tsx
+                                    │   │   │
+                                    │   │   ├── services/             # /services route
+                                    │   │   │   └── page.tsx
+                                    │   │   │
+                                    │   │   └── contact/              # /contact route
+                                    │   │       └── page.tsx
+                                    │   │
+                                    │   └── components/               # Reusable React components
+                                    │       └── Signup.tsx
+                                    │
+                                    ├── .eslintrc.json                # ESLint config (linting rules)
+                                    ├── .gitignore                    # Git ignored files
+                                    ├── next-env.d.ts                 # TypeScript Next.js types
+                                    ├── next.config.mjs               # Next.js configuration file
+                                    ├── package-lock.json             # Locked dependency versions
+                                    ├── package.json                  # ✅ Dependencies & scripts
+                                    ├── postcss.config.js             # PostCSS setup (for Tailwind)
+                                    ├── tailwind.config.ts            # Tailwind theme & extensions
+                                    ├── tsconfig.json                 # TypeScript compiler configuration
+                                    └── README.md                     # Project documentation
+
+
+
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/Gaurav-kumar-yadav/Frontend-Assignment.git
+
+# 2. Navigate to the project folder
+cd Frontend Assignment
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Assumptions Made
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The user authentication (Google/Microsoft) is represented as static UI (no backend).
 
-## Learn More
+The gradient background and blur effects were optimized for modern browsers.
 
-To learn more about Next.js, take a look at the following resources:
+All assets are assumed to be stored inside /public/assets.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✨ Additional Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Added hover glow and animation to buttons for modern UI effect.
 
-## Deploy on Vercel
+Fully responsive layout using Tailwind CSS breakpoints.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Added routing for About, Services, and Contact pages.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Clean component-based structure with reusable <Signup /> component.
+
+Deployed on Vercel with production-ready configuration.
+
+🛠️ Technologies Used
+
+Next.js 14 (App Router)
+
+TypeScript
+
+Tailwind CSS
+
+React 18
+
+Vercel (for deployment)
+
+
